@@ -70,8 +70,7 @@ Project Structure
    - Add your bot token and database URL:
 
      ```env
-     ESLINT_CONFIG_PRETTIER_NO_DEPRECATED=true
-     DATABASE_URL=file:./database.db
+     DATABASE_URL=file:'./database.db'
 
      DISCORD_TOKEN=your-bot-token
      DISCORD_CLIENT_ID=your-bot-client-id
