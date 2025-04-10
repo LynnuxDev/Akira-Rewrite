@@ -1,24 +1,24 @@
 {
-    "semi": true,
-    "singleQuote": true,
-    "tabWidth": 4,
-    "trailingComma": "all",
-    "printWidth": 128,
-    "useTabs": false,
-    "bracketSameLine": false,
-    "quoteProps": "as-needed",
-    "overrides": [
-        {
-            "files": ["*.ts", "*.js"],
-            "options": {
-                "indentSwitchCase": false
-            }
-        },
-        {
-            "files": "*.md",
-            "options": {
-                "proseWrap": "preserve"
-            }
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 4,
+  "trailingComma": "all",
+  "printWidth": 128,
+  "useTabs": false,
+  "bracketSameLine": false,
+  "quoteProps": "as-needed",
+  "overrides": [
+    {
+      "files": ["*.ts", "*.js"],
+      "options": {
+        "indentSwitchCase": false
       }
-    ]
+    },
+    {
+      "files": "*.md",
+      "options": {
+        "proseWrap": "preserve"
+      }
+    }
+  ]
 }

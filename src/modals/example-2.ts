@@ -5,8 +5,8 @@ export default {
   customId: 'test-modal',
   async execute(
     client: ExtendedClient,
-    interaction: ModalSubmitInteraction,
+    interaction: ModalSubmitInteraction<'cached'>,
   ): Promise<void> {
-    interaction.reply({content: `this modelId is exactly test-modal.`})
-  }
-}
+    interaction.reply({content: 'this modelId is exactly test-modal.'});
+  },
+};

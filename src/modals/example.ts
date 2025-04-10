@@ -5,8 +5,8 @@ export default {
   customId: (id: string): boolean => id.startsWith('example-'),
   async execute(
     client: ExtendedClient,
-    interaction: ModalSubmitInteraction,
+    interaction: ModalSubmitInteraction<'cached'>,
   ): Promise<void> {
-    interaction.reply({content: `this modelId starts with example-.`})
-  }
-}
+    interaction.reply({content: 'this modelId starts with example-.'});
+  },
+};
