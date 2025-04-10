@@ -212,7 +212,6 @@ model PremiumSubscription {
   user      User        @relation(fields: [userId], references: [user_id])
 }
 
-
 /**
  * Testing
  */

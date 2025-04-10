@@ -28,10 +28,6 @@ export function isYarnV2OrHigher() {
   }
 }
 
-/**
- * Returns the correct command prefix for running Prisma with the detected package manager.
- * @returns {string} The appropriate command prefix (`npx`, `pnpm dlx`, or `yarn dlx` for v2+).
- */
 export function getCommandPrefix() {
   const packageManager = getPackageManager();
   if (packageManager === 'pnpm') return 'pnpm dlx';

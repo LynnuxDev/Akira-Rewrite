@@ -8,7 +8,7 @@ import { logger } from '@/utils';
 dotenv.config();
 
 /**
- * An extended Discord client with collections for commands, buttons, modals, etcetera.
+ * An extended Discord client with collections for commands, buttons, modals.
  */
 export class ExtendedClient extends Client<true> {
   readonly commands: Collection<string, Command>;

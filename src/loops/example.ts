@@ -7,6 +7,6 @@ export default (client: ExtendedClient):void => {
     logger.info('A loop ran.' + userName);
   };
 
-  setInterval(() => example(), 30 * 60 * 1000); // runs example every 30 minutes (in ms)
+  setInterval(() => example(), 30 * 60 * 1000); // runs every 30 minutes
 };
 // Loops don't run on start!
