@@ -1,0 +1,72 @@
+# yamllint disable rule:line-length
+---
+name: 🐛 Bug Report
+description: Report an issue to help improve the bot
+title: '[Bug] <brief title>'
+labels: [bug]
+assignees:
+  - Dark-LYNN
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🐛 Bug Report
+
+  - type: textarea
+    id: describe-bug
+    attributes:
+      label: Describe the Bug
+      description: A clear and concise description of the issue.
+      placeholder: What’s going wrong?
+
+  - type: textarea
+    id: reproduce-steps
+    attributes:
+      label: To Reproduce
+      description: Describe the steps to reproduce the issue.
+      placeholder: |
+        1. Action taken – e.g., ran /ping
+        2. Expected behavior – What should have happened?
+        3. Actual behavior – What actually happened?
+        4. Bot's response (if any)
+        5. Does this happen every time? – [Yes/No]
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: A clear explanation of what should have happened.
+
+  - type: input
+    id: screenshots
+    attributes:
+      label: Link to Screenshots (optional)
+      description: Upload images and paste the links here.
+
+  - type: input
+    id: server-details
+    attributes:
+      label: Discord Server Details
+      description: Server ID, channel, and optional user ID
+      placeholder: "Server ID: 123..., Channel: #general, User ID: (optional)"
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other relevant details, such as other bots.
+
+  - type: textarea
+    id: possible-solution
+    attributes:
+      label: Possible Solution (if known)
+      description: Share your thoughts if you have an idea what might be wrong.
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ### 📌 Important Notes
+        - Check if the bot is **online** before reporting.
+        - Search for **existing issues** before submitting duplicates.
+        - If the bug affects a specific **command or feature**, mention it explicitly.

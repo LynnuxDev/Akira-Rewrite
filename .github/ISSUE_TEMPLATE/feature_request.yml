@@ -1,0 +1,47 @@
+# yamllint disable rule:line-length
+---
+name: 💡 Feature Request
+description: Suggest an idea to improve the bot
+title: '[Feature] <brief title>'
+labels: [enhancement]
+assignees:
+  - Dark-LYNN
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚀 Feature Request
+
+  - type: textarea
+    id: related-problem
+    attributes:
+      label: Is your feature request related to a problem?
+      description: A clear and concise description of the problem.
+      placeholder: |
+        Example: "I'm always frustrated when [...]"
+
+  - type: textarea
+    id: desired-solution
+    attributes:
+      label: Describe the solution you'd like
+      description: A clear and concise description of the feature you want to see.
+      placeholder: Tell us what you'd love to see.
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Describe alternatives you've considered
+      description: Any alternative solutions or workarounds you've tried or thought about.
+      placeholder: Other ways you thought about solving this.
+
+  - type: textarea
+    id: benefit
+    attributes:
+      label: How would this benefit users?
+      description: Explain why this feature would improve the bot or make it more useful.
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other details, screenshots, or mockups if applicable.
