@@ -29,13 +29,13 @@ jobs:
         run: |
           npm run db
         env:
-          DATABASE_URL: "file:./database.db"
+          DATABASE_URL: 'file:akira.db'
 
       - name: Run tests with coverage
         run: |
           npm run test --coverage
         env:
-          DATABASE_URL: "file:./database.db"
+          DATABASE_URL: 'file:akira.db'
 
       - name: Upload coverage to Qlty
         uses: qltysh/qlty-action/coverage@main
