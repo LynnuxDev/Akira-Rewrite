@@ -211,3 +211,13 @@ model PremiumSubscription {
   tier      PremiumTier
   user      User        @relation(fields: [userId], references: [user_id])
 }
+
+
+/**
+ * Testing
+ */
+
+model test {
+  user_id   String   @id @unique
+  createdAt DateTime @default(now())
+}
