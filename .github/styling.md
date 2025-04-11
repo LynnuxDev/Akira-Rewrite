@@ -24,6 +24,7 @@ and cohesive project.
 
 - **Variables and functions:** Use `camelCase` (e.g., `handleCommand`).
 - **files and Directories:** Use `camelCase` (e.g., `commandHandler`).
+- **JSON Objects:** Use `UPPERCASE_SNAKE_CASE` (e.g., `DISCORD_BOT`).
 
 ### File Organization
 
