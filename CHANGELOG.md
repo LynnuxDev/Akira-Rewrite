@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.3](https://github.com/LynnuxDev/Akira-Rewrite/compare/v1.3.0...v0.0.3) (2025-04-11)
+
 ## 1.3.0 (2025-04-11)
 
 
