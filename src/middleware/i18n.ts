@@ -1,7 +1,6 @@
 import fs from 'fs';
-import path, { join } from 'path';
 import yaml from 'js-yaml';
-
+import path, { join } from 'path';
 import { Translations } from '@/types/translations';
 
 const BASE_PATH = join(process.cwd(), '..', '/AkiraLocalization');
@@ -12,7 +11,7 @@ const BASE_PATH = join(process.cwd(), '..', '/AkiraLocalization');
  * @param key - The translation key in dot notation (e.g., 'greetings.hello').
  * @returns The translation value or an error message if the key or file is not found.
  */
-export function loadYaml(lang: string, key: string): string {
+export function i18n(lang: string, key: string): string {
   try {
     const filePath = path.join(
       BASE_PATH,

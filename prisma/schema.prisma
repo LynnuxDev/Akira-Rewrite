@@ -194,13 +194,14 @@ model Cooldown {
 }
 
 model UserSettings {
-  cuid    String  @id @default(cuid())
-  userId  String  @unique
-  prefix  String  @default("a.")
-  color   String  @default("ff47ff")
-  premium Boolean @default(false)
+  cuid     String  @id @default(cuid())
+  userId   String  @unique
+  prefix   String  @default("a.")
+  color    String  @default("ff47ff")
+  language String  @default("en-US")
+  premium  Boolean @default(false)
   // Relation
-  user    User    @relation(fields: [userId], references: [user_id])
+  user     User    @relation(fields: [userId], references: [user_id])
 }
 
 model PremiumSubscription {
