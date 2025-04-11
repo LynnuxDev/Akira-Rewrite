@@ -2,9 +2,7 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
-## [0.0.3](https://github.com/LynnuxDev/Akira-Rewrite/compare/v1.3.0...v0.0.3) (2025-04-11)
-
-## 1.3.0 (2025-04-11)
+## 0.0.3 (2025-04-11)
 
 
 ### Features
@@ -23,7 +21,7 @@ All notable changes to this project will be documented in this file. See [commit
 * Installed js-yaml ([055f6f1](https://github.com/LynnuxDev/Akira-Rewrite/commit/055f6f10c4546572660215a5433a00f45376a2c9))
 * Update Template. ([89230ec](https://github.com/LynnuxDev/Akira-Rewrite/commit/89230ece93cdfabb540acdae9292e183cbe35d9b))
 
-## 1.1.0 (2025-04-01)
+## 0.0.2 (2025-04-01)
 
 
 ### Features
@@ -58,3 +56,5 @@ All notable changes to this project will be documented in this file. See [commit
 * Removed commands. ([3968165](https://github.com/Dark-LYNN/RepoTemplate/commit/3968165322dfda925c35b3122f0a2c89ca2cfe6c))
 * semicolon ([24ea229](https://github.com/Dark-LYNN/RepoTemplate/commit/24ea2297d52500d96515db4e3bfe819d650f2340))
 * semicolon ([09b8992](https://github.com/Dark-LYNN/RepoTemplate/commit/09b8992820d0b03da27e23035446ac9163ed7f99))
+
+## 0.0.1 (2025-03-28)
