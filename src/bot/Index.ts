@@ -1,7 +1,7 @@
 import { ExtendedClient } from '@/types/extendedClient';
 import { GatewayIntentBits, Partials } from 'discord.js';
 import { logger } from '@/utils';
-import { loadButtons, loadLoops, loadCommands, loadEvents } from './handler';
+import { loadButtons, loadLoops, loadCommands, loadEvents } from './handler/index';
 import { loadModals } from './handler/modalHandler';
 
 const client = new ExtendedClient({

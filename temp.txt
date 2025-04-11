@@ -1,0 +1,3 @@
+vsce package > make package
+
+codium --install-extension <package.vsix> > install it

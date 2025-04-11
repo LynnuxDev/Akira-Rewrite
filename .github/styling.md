@@ -11,7 +11,7 @@ and cohesive project.
 
 ### General Rules
 
-- Use **TypeScript** for all code.
+- Use **TypeScript** for all (Bot Related) codes.
 - Follow the **[ESLint](https://eslint.org/)** style guide with
   TypeScript-specific rules.
 - Indentation: Use **2 spaces**.
@@ -23,7 +23,7 @@ and cohesive project.
 ### Naming Conventions
 
 - **Variables and functions:** Use `camelCase` (e.g., `handleCommand`).
-- **files and Directories:** Use `PascalCase` (e.g., `CommandHandler`).
+- **files and Directories:** Use `camelCase` (e.g., `commandHandler`).
 
 ### File Organization
 
@@ -67,7 +67,7 @@ Below is the standard structure and its purpose:
 
 ### Comments
 
-- Use comments sparingly but effectively to explain**why** rather than **what**.
+- Use comments sparingly but effectively to explain **why** rather than **what**.
 - For functions, use JSDoc-style comments to describe parameters and return values:
 
   ```ts

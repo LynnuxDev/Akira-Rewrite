@@ -26,12 +26,12 @@ To help you get started, please follow this guide to ensure a smooth collaborati
 ## Getting Started
 
 1. **Fork the repository:**
-   - Visit the [repository](https://github.com/Dark-LYNN/DiscordBotTemplate)
+   - Visit the [repository](https://github.com/LynnuxDev/Akira-Rewrite)
      and click on the `Fork` button.
 2. **Clone your fork:**
 
    ```bash
-   git clone https://github.com/Dark-LYNN/DiscordBotTemplate.git
+   git clone https://github.com/LynnuxDev/Akira-Rewrite.git
    ```
 
 3. **Set up your environment:**
@@ -56,7 +56,7 @@ the expectations for participating in this project.
 
 ### Reporting Bugs
 
-- Check if the issue already exists in the [issues list](https://github.com/Dark-LYNN/DiscordBotTemplate/issues).
+- Check if the issue already exists in the [issues list](https://github.com/LynnuxDev/Akira-Rewrite/issues).
 - Create a new issue and include:
   - A clear, descriptive title.
   - Steps to reproduce the bug.
@@ -121,7 +121,7 @@ the expectations for participating in this project.
    ```
 
 6. **Open a pull request:**
-   - Go to the [Pull Requests](https://github.com/Dark-LYNN/DiscordBotTemplate/pulls)
+   - Go to the [Pull Requests](https://github.com/LynnuxDev/Akira-Rewrite/pulls)
      section.
    - Provide a detailed description of your changes.
 
