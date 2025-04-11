@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## 1.3.0 (2025-04-11)
+
+
+### Features
+
+* Added about command. ([ce46de4](https://github.com/LynnuxDev/Akira-Rewrite/commit/ce46de49b6e736abd115b2fc1aa38b3bede9e30d))
+* Added function to get a user's language. ([5a8b28a](https://github.com/LynnuxDev/Akira-Rewrite/commit/5a8b28a60bccf490c5265b1a2d21761f5f810bbb))
+* Added i18n middleware. ([aac0c51](https://github.com/LynnuxDev/Akira-Rewrite/commit/aac0c51206c504bfbf41989f8f0be9cea5896684))
+* Added i18n support. ([0877727](https://github.com/LynnuxDev/Akira-Rewrite/commit/08777272ad6cd590ed7939227e1f2655b5c26c19))
+* Now imports links from static json file. ([eefd09d](https://github.com/LynnuxDev/Akira-Rewrite/commit/eefd09ddb8ed2f05699abd3e77c1b9e6452b2cba))
+
+
+### Chores
+
+* Database Setup. ([78bb94e](https://github.com/LynnuxDev/Akira-Rewrite/commit/78bb94e665ad46168d21f0ce082cfb60dcada0c5))
+* Database Setup. ([497e082](https://github.com/LynnuxDev/Akira-Rewrite/commit/497e082aa6ebb5ba81bd04f031216a61afe7b8c6))
+* Installed js-yaml ([055f6f1](https://github.com/LynnuxDev/Akira-Rewrite/commit/055f6f10c4546572660215a5433a00f45376a2c9))
+* Update Template. ([89230ec](https://github.com/LynnuxDev/Akira-Rewrite/commit/89230ece93cdfabb540acdae9292e183cbe35d9b))
+
 ## 1.1.0 (2025-04-01)
 
 
