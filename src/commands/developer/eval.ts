@@ -1,9 +1,9 @@
 import { ChatInputCommandInteraction, SlashCommandBuilder } from 'discord.js';
-import { ExtendedClient } from '../../types/extendedClient';
-import { logger } from '../../utils';
+import { ExtendedClient } from '@/types/extendedClient';
+import { logger } from '@/utils';
 
 export default {
-  guilds: ['123456789012345678', '876543210987654321'], // Only register to these guilds. (These are temp guilds)
+  guilds: ['800133788117106729'],
   data: new SlashCommandBuilder()
     .setName('eval')
     .setDescription('Evaluates JavaScript code (dev only))')

@@ -1,34 +1,50 @@
 import { ExtendedClient } from '@/types/extendedClient';
 import { logger } from '@/utils';
 import { Interaction, ButtonInteraction } from 'discord.js';
-import { readdirSync } from 'fs';
+import { statSync, readdirSync } from 'fs';
 import path from 'path';
 
 export const loadButtons = async (
   client: ExtendedClient,
-):Promise<void> => {
+): Promise<void> => {
   const buttonsPath = path.join(__dirname, '../../buttons');
-  const buttonFiles = readdirSync(buttonsPath).filter(file => file.endsWith('.ts') || file.endsWith('.js'));
 
-  for (const file of buttonFiles) {
-    const filePath = path.join(buttonsPath, file);
-    const button = (await import(filePath)).default;
+  const walk = async (dir: string): Promise<void> => {
+    const files = readdirSync(dir);
 
-    if (button && button.customId) {
-      client.buttons.set(button.customId, button);
+    for (const file of files) {
+      const fullPath = path.join(dir, file);
+      const stat = statSync(fullPath);
 
-      const isDynamic = typeof button.customId !== 'string';
-      const displayId = isDynamic ? '[Dynamic Function]' : button.customId;
+      if (stat.isDirectory()) {
+        await walk(fullPath); // Recurse into subfolders
+      } else if (
+        (file.endsWith('.ts') || file.endsWith('.js')) &&
+        !file.startsWith('_')
+      ) {
+        try {
+          const button = (await import(fullPath)).default;
 
-      const logMessage = isDynamic ? `${displayId} (${file})` : displayId;
+          if (button && button.customId) {
+            client.buttons.set(button.customId, button);
 
-      logger.info(`✅ | Loaded button: ${logMessage}`);
-    } else {
-      logger.warn(`⚠️ Skipping invalid button file: ${file}`);
+            const isDynamic = typeof button.customId !== 'string';
+            const displayId = isDynamic ? '[Dynamic Function]' : button.customId;
+
+            logger.info(`✅ | Loaded button: ${displayId} (${path.relative(buttonsPath, fullPath)})`);
+          } else {
+            logger.warn(`⚠️ | Skipping invalid button file: ${file}`);
+          }
+        } catch (err) {
+          logger.error(`❌ | Failed to load button file: ${file}`, err);
+        }
+      }
     }
-  }
-  return;
+  };
+
+  await walk(buttonsPath);
 };
+
 
 export const buttonHandler = async (
   client: ExtendedClient,
