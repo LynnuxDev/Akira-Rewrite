@@ -9,5 +9,5 @@ export default {
   ):Promise<void> {
     await interaction.deferUpdate();
     await interaction.message.delete();
-},
+  },
 };
