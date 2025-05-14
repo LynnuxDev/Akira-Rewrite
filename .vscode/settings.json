@@ -1,9 +1,16 @@
 {
   "files.exclude": {
-    "**/.versionrc": false,
-    "**/*.db-journal": true
-  },
-  "cSpell.words": [
-    "envrc"
-  ]
+    // Remove Cluster
+    "**/.versionrc": true,
+    "node_modules": true,
+    "logs": true,
+    "dist": true,
+    // Cache Related
+    "**/*.db-journal": true,
+    ".direnv": true,
+    "flake.lock": true,
+    "pnpm-lock.yaml": true,
+    "pnpm-workspace.yaml": true,
+    "tsconfig.tsbuildinfo": true,
+  }
 }
