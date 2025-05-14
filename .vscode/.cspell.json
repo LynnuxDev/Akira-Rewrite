@@ -112,6 +112,7 @@
   // List of words to be mark as correct.
   "words": [
     "CLIENTID",
+    "direnv",
     "discordbot",
     "dotenv",
     "eslintcache",

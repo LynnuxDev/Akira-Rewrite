@@ -2,5 +2,8 @@
   "files.exclude": {
     "**/.versionrc": false,
     "**/*.db-journal": true
-  }
+  },
+  "cSpell.words": [
+    "envrc"
+  ]
 }
