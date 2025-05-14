@@ -3,7 +3,7 @@
     // Remove Cluster
     "**/.versionrc": true,
     "node_modules": true,
-    "logs": true,
+    "logs": false,
     "dist": true,
     // Cache Related
     "**/*.db-journal": true,
