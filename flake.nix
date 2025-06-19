@@ -17,17 +17,17 @@
       devShells.default = pkgs.mkShell {
         buildInputs = [
           pkgs.nodejs_24
-          pkgs.prisma-engines
+          pkgs.python3
+          pkgs.pkg-config
           pkgs.pnpm
           pkgs.direnv
           pkgs.openssl
+          pkgs.sqlite
+          pkgs.gcc
         ];
 
         shellHook = ''
-          export PRISMA_QUERY_ENGINE_BINARY="${pkgs.prisma-engines}/bin/query-engine"
-          export PRISMA_SCHEMA_ENGINE_BINARY="${pkgs.prisma-engines}/bin/schema-engine"
-          export PRISMA_FMT_BINARY="${pkgs.prisma-engines}/bin/prisma-fmt"
-          export PRISMA_ENGINES_CHECKSUM_IGNORE_MISSING="1"
+          export npm_config_python="${pkgs.python3}/bin/python3"
         '';
       };
     }

@@ -1,5 +1,8 @@
-import { PrismaClient } from '@prisma/client';
+import { Kysely, SqliteDialect } from 'kysely'
+import SQLite from 'better-sqlite3'
 
-const prisma = new PrismaClient();
-
-export { prisma };
+export const db = new Kysely<DB>({
+  dialect: new SqliteDialect({
+    database: new SQLite('database/XelaRelam.sqlite'),
+  }),
+})
