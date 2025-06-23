@@ -1,1 +1,105 @@
-{}
+{
+  "Info": {
+    "options": {
+      "prefix": "Returns prefix",
+      "command": "Returns the command",
+      "messageOne": "Returns the message[1]",
+      "example": "Example of the command"
+    }
+  },
+  "0": {
+    "code": 0,
+    "comment": "Example object",
+    "meaning": "Quick meaning of error",
+    "from": "The error origin",
+    "embed": {
+      "title": ["Array of", "titles", "we pick a random one", "to add a little", "fun to errors."],
+      "color": "Hex color (if not provided use default error color)",
+      "description": "Error embed description reason",
+      "footer": "Akira | Error System",
+      "showTimestamp": true,
+      "ephemeral": true
+    }
+  },
+  "100": {
+    "code": 100,
+    "from": "Client",
+    "meaning": "Continue",
+    "embed": {
+      "title": [""],
+      "description": "Indicates that the initial part of a request has been received."
+    }
+  },
+  "101": {
+    "code": 101,
+    "from": "Client",
+    "meaning":"Command Received",
+    "embed": {
+      "title": [""],
+      "description":"This code indicates that Akira has successfully received a command but hasn't started processing it yet."
+    }
+  },
+  "102": {
+    "code": 102,
+    "from":"Client",
+    "meaning": "Slash Received",
+    "embed": {  
+      "title": [""],
+      "description": "Similar to 101, but with slash command."
+    }
+  },
+  "200": {
+    "code": 200,
+    "from": "Any",
+    "meaning": "Request successful",
+    "embed": {
+      "title": [""],
+      "description": "Request was successful"
+    }
+  },
+  "301": {
+    "code": 301,
+    "from": "Client",
+    "meaning": "Moved Permanently",
+    "embed":{
+      "title": ["This Command is on Retirement."],
+      "description": "The command used has been changed."
+    }
+  },
+  "302": {
+    "code": 302,
+    "from": "Client",
+    "meaning": "Moved Temporarily",
+    "embed": {
+      "title": ["This Command is on Vacation."],
+      "description": "The command used has been temporarily changed."
+    }
+  },
+  "304": {
+    "code": 304,
+    "from": "Client",
+    "meaning": "Not Modified",
+    "embed": {
+      "title": ["Oh no, thats not supposed to happen.", "Error during request."],
+      "description": "The result has not been modified."
+    }
+  },
+  "400": {
+    "code": 400,
+    "from": "Client",
+    "meaning": "Bad Request",
+    "embed": {
+      "title": ["Check⸲ Please! That Command’s a Little Off…", "Hmm⸲ That Doesn’t Look Quite Right…", "That’s Not Quite What I Expected...", "Yuri’s Not the Only One Feeling Anxious…", "It's Not You⸲ It’s the Syntax… 💔"],
+      "description": "The command/request provided is incorrect."
+    }
+  },
+  "404": {
+    "code": 400,
+    "from": "Any",
+    "meaning": "Endpoint Not Found",
+    "embed": {
+      "title": ["Fun Not Found! 😜","Command Went Missing!","Command Not in My’s Dictionary!","Command Not Found, But I Found a Cookie.","I Have No Idea What That Is", "Command Went Poof!","I Never Heard of That One.", "404: Command Missing – Must’ve Been Purged by Dyno"],
+      "description": "I didn't find this command, perhaps due to a typo or this is a non-existent command."
+    }
+  }
+}
