@@ -1,16 +1,120 @@
 {
   "files.exclude": {
     // Remove Cluster
-    "**/.versionrc": true,
-    "node_modules": true,
+    "**/.versionrc": false,
+    "node_modules": false,
     "logs": false,
-    "dist": true,
+    "dist": false,
     // Cache Related
-    "**/*.db-journal": true,
-    ".direnv": true,
-    "flake.lock": true,
-    "pnpm-lock.yaml": true,
-    "pnpm-workspace.yaml": true,
-    "tsconfig.tsbuildinfo": true,
-  }
+    "**/*.db-journal": false,
+    ".direnv": false,
+    "flake.lock": false,
+    "pnpm-lock.yaml": false,
+    "pnpm-workspace.yaml": false,
+    "tsconfig.tsbuildinfo": false,
+  },
+  "json.schemaDownload.enable": true,
+  // Licensing
+  "license.author": "Beltiston",
+  "license.year": "auto",
+  // PSI Headers
+  "psi-header.config": {
+    "forceToTop": true,
+    "blankLinesAfter": 2,
+    "license": "Unlicensed",
+    "company": "Lynnux",
+    "creationDateZero": "now",
+    "updateLicenseVariables": false
+  },
+  "psi-header.variables": [
+    [
+      "projectCreationYear",
+      "2025"
+    ],
+    [
+      "copyrightholder",
+      "Lynnux"
+    ]
+  ],
+  "psi-header.changes-tracking": {
+    "isActive": true,
+    "modAuthor": "Modified By:",
+    "modDate": "Last Modified:",
+    "modDateFormat": "dd/MM/yyyy hh:nn:ss",
+    "exclude": [
+      "markdown",
+      "json",
+      "jsonc",
+      "shellscript"
+    ],
+    "excludeGlob": [
+      "./**/*/ignoreme.*"
+    ],
+    "autoHeader": "autoSave",
+    "enforceHeader": false,
+    "updateLicenseVariables": true
+  },
+  "psi-header.lang-config": [
+    {
+      "language": "javascript",
+      "begin": "/*",
+      "prefix": " * ",
+      "suffix": " *",
+      "lineLength": 80,
+      "end": " */",
+      "forceToTop": true,
+      "blankLinesAfter": 2,
+      "beforeHeader": [],
+      "afterHeader": [],
+      "rootDirFileName": "package.json",
+      "modAuthor": "Modified By:",
+      "modDate": "Last Modified:",
+      "modDateFormat": "dd/MM/yyyy hh:nn:ss",
+      "replace": [
+        "Filename:",
+        "Project"
+      ],
+      "ignoreLines": []
+    },
+    {
+      "language": "typescript",
+      "mapTo": "javascript"
+    }
+  ],
+  "psi-header.license-reference": {
+    "uri": "/LICENSE",
+    "uriIsLocalFile": true
+  },
+  "psi-header.templates": [
+    {
+      "language": "javascript",
+      "template": [
+        "File: <<filename>>",
+        "Project: <<projectname>>",
+        "Created Date: <<filecreated('dddd, Do MMMM YYYY h:mm:ss a')>>",
+        "Author: <<author>>",
+        "-----",
+        "Last Modified: <<date>>",
+        "Modified By: <<author>>",
+        "-----",
+        "Copyright (c) <<yeartoyear(2025, now)>> <<company>>",
+        "-----",
+        "HISTORY:",
+        "Date      \tBy\tComments",
+        "----------\t---\t---------------------------------------------------------"
+      ],
+      "changeLogCaption": "HISTORY",
+      "changeLogHeaderLineCount": 2,
+      "changeLogEntryTemplate": [
+        "",
+        "<<dateformat('DD-MM-YYYY')>>\t<<initials>>\t"
+      ],
+      "changeLogNaturalOrder": false,
+      "changeLogFooterLineCount": 0
+    },
+    {
+      "language": "typescript",
+      "mapTo": "javascript"
+    }
+  ],
 }
