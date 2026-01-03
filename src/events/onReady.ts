@@ -1,11 +1,11 @@
-import { logger } from '../utils';
-import { ExtendedClient } from '../types/extendedClient';
+import { logger } from '@/utils';
+import { ExtendedClient } from '@/types/extendedClient';
 import { Events } from 'discord.js';
 
 export default {
   name: Events.ClientReady,
   once: true,
-  async execute(client: ExtendedClient):Promise<void> {
+  async execute(client: ExtendedClient): Promise<void> {
     logger.info(`✅ | Logged in as ${client.user?.tag}`);
 
     /**

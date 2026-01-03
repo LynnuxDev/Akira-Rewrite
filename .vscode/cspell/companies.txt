@@ -305,6 +305,7 @@ Crazy Eddie
 Crazy Tiger
 Creative Wealth
 Creative Wealth Management
+CROWDIN
 Crowley Maritime Corporation
 Custom Lawn Care
 Custom Lawn Service
@@ -606,6 +607,7 @@ KPMG
 Kraft Foods
 Kroger
 Kurzweil Educational Systems
+kysely
 L.L.Bean
 L&L Hawaiian Barbecue
 Landskip Yard Care
@@ -1024,6 +1026,7 @@ The White Swan
 THQ
 Time Warner Cable
 Titania
+TOPGG
 Total Network Development
 Total Quality
 Total Serve

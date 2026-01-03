@@ -1,16 +1,19 @@
 import { Interaction } from 'discord.js';
-import { ExtendedClient } from '../types/extendedClient';
-import { buttonHandler, handleInteraction } from '../bot/handler';
-import { modalHandler } from '@/bot/handler/modalHandler';
+import { ExtendedClient } from '@/types/extendedClient';
+import {
+  buttonHandler,
+  commandExecutor,
+  modalHandler,
+} from '../client/handler/index';
 
 export default {
   name: 'interactionCreate',
   async execute(
     client: ExtendedClient,
     interaction: Interaction,
-  ):Promise<void> {
+  ): Promise<void> {
     if (interaction.isChatInputCommand()) {
-      await handleInteraction(client, interaction);
+      await commandExecutor(client, interaction);
     } else if (interaction.isButton()) {
       await buttonHandler(client, interaction);
     } else if (interaction.isModalSubmit()) {

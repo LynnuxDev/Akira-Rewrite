@@ -1,2 +1,2 @@
-import 'module-alias/register';
-import '@/bot/index';
+// import 'module-alias/register';
+import './client/client';

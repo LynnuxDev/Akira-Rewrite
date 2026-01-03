@@ -1,8 +1,3 @@
-import { Kysely, SqliteDialect } from 'kysely'
-import SQLite from 'better-sqlite3'
-
-export const db = new Kysely<DB>({
-  dialect: new SqliteDialect({
-    database: new SQLite('database/XelaRelam.sqlite'),
-  }),
-})
+export * from './schema';
+export * from './client';
+export * from './migrate';

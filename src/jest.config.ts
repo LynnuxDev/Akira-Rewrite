@@ -12,7 +12,6 @@ const config: Config = {
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1',
   },
-
 };
 
 export default config;

@@ -113,9 +113,11 @@
   "words": [
     "AKIRA",
     "CLIENTID",
+    "cooldown",
     "direnv",
     "discordbot",
     "dotenv",
+    "envrc",
     "eslintcache",
     "issuehunt",
     "jspm",

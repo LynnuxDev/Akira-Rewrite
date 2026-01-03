@@ -1,14 +1,24 @@
 import { ChatInputCommandInteraction, SlashCommandBuilder } from 'discord.js';
 import { ExtendedClient } from '@/types/extendedClient';
+import { CommandId } from '@/database/schema';
 import { logger } from '@/utils';
 
 export default {
+  id: CommandId.EVAL,
+  metadata: {
+    cooldown: 0,
+    description: 'Evaluates JavaScript code (developer only).',
+    usage: '/eval code:<code>',
+    sourceCode:
+      'https://github.com/LynnuxDev/Akira-Rewrite/blob/main/src/commands/developer/eval.ts',
+  },
   guilds: ['800133788117106729'],
   data: new SlashCommandBuilder()
     .setName('eval')
-    .setDescription('Evaluates JavaScript code (dev only))')
+    .setDescription('Evaluates JavaScript code (dev only)')
     .addStringOption((option) =>
-      option.setName('code')
+      option
+        .setName('code')
         .setDescription('Code to evaluate.')
         .setRequired(true),
     ),
@@ -16,7 +26,7 @@ export default {
   async execute(
     client: ExtendedClient,
     interaction: ChatInputCommandInteraction,
-  ):Promise<void> {
+  ): Promise<void> {
     const allowedUserIds = ['YOUR_ID'];
 
     if (!allowedUserIds.includes(interaction.user.id)) {
